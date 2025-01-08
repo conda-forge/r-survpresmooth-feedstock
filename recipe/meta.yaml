@@ -1,4 +1,4 @@
-{% set version = "1.1-11" %}
+{% set version = "1.1-12" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/survPresmooth_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/survPresmooth/survPresmooth_{{ version }}.tar.gz
-  sha256: 76f50223e04baef27465904247d741f4c492954c5f87a57d78d3d41cc923ffe5
+  sha256: 9370b21b370bb2308597ada70decceecd6b93ca0ea45e70259f977c7304dc589
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
